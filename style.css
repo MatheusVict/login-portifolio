@@ -1,0 +1,148 @@
+@import url(//db.onlinewebfonts.com/c/8d7d351969f1e648d8d3e3e83cf837fb?family=eva-font);
+body{
+    margin: 0;
+    font-family: "eva-font", sans-serif;
+    width: 100%;
+    
+    @font-face {font-family: "eva-font";src: url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.eot");
+        src: url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.eot?#iefix")
+         format("embedded-opentype"),
+          url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.woff") 
+          format("woff2"), url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.woff") 
+          format("woff"), url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.ttf") 
+          format("truetype"), url("//db.onlinewebfonts.com/t/8d7d351969f1e648d8d3e3e83cf837fb.svg#eva-font")
+           format("svg");}
+
+
+}
+body * {
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left > h1{
+    color: #77ffc0;
+    font-size: 3vw;
+}
+
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.box > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.logi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.logi > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    outline: none;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.logi > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.logi > input::placeholder{
+    color: #f0ffff94
+}
+
+.bnt-log{
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color:#2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+img{
+    height: 150vh;
+    width: 35vw;
+}
+@media only screen and (max-width: 950px){
+    .box{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+
+    }
+    .left > h1{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .left > .foto{
+        height: 20vh;
+        
+    }
+    .box{
+        width: 90%;
+    }
+}
